@@ -5,8 +5,9 @@
             "name": "Run main.py",
             "type": "debugpy",
             "request": "launch",
-            "module": "backend.main",
-            "cwd": "${workspaceFolder}"
+            "module": "uvicorn",
+            "cwd": "${workspaceFolder}",
+            "args": ["--reload", "backend.main:app" ]
         }
     ]
 }
